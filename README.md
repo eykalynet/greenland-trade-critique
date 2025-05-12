@@ -1,22 +1,26 @@
-# A formal critique of classical trade theory through the lens of Greenland’s economy and the hypothetical U.S. annexation scenario. This project challenges the applicability of the Ricardian, Heckscher–Ohlin, and Specific Factors models in a structurally fragile Arctic context.
+# Final Paper – Greenland Trade and Annexation
 
-## Contents
+This repository contains the LaTeX source files, figures, and data used to produce my final economics paper on Greenland, trade diversion, and U.S. annexation interests.
 
-- `docs.tex` – Main LaTeX source file
-- `adonis.cls` – Custom class file for formatting
-- `quickstart.tex` – Optional template or supplement
-- `docs.pdf` – Compiled version of the main paper
-- `.gitignore` – Ignores build files and compiled output
-- `LICENSE` – MIT License
+## Files
+
+- `docs.tex` – Main LaTeX file  
+- `docs.pdf` – Final compiled paper  
+- `adonis.cls` – Custom class file for formatting  
+- `bibliography.bib` – Bibliography and citation data  
+- `images/` – Folder with all figures and maps  
+- `graph.R` – R script for seafood import visualizations  
+- `FoodImports.csv` – Data for U.S. seafood imports  
+- `.gitignore` – LaTeX build and temp file exclusions  
+- `LICENSE` – MIT license  
 - `README.md` – This file
 
-## Motivation
+## To Compile
 
-The project responds to renewed interest in Greenland’s geopolitical value. It examines why classical economic models fail to account for the region’s structural dependence, ecological vulnerability, and limited trade diversification.
-
-## Build Instructions
-
-To compile the LaTeX document:
+Run:
 
 ```bash
+pdflatex docs.tex
+biber docs
+pdflatex docs.tex
 pdflatex docs.tex
